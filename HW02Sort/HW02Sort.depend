@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1600531366 source:c:\users\dan\documents\codeblocks\skyscraper\hw02sort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"sort.h"
+
+1600531366 c:\users\dan\documents\codeblocks\skyscraper\hw02sort\sort.h
+	<stdio.h>
+	<stdbool.h>
+
+1600800746 source:c:\users\dan\documents\codeblocks\skyscraper\hw02sort\sort.c
+	"sort.h"
+	<stdio.h>
+
