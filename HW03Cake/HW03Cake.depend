@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1600806027 source:c:\users\dan\documents\codeblocks\skyscraper\hw03cake\eliminate.c
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<string.h>
+
+1600531366 source:c:\users\dan\documents\codeblocks\skyscraper\hw03cake\main.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+

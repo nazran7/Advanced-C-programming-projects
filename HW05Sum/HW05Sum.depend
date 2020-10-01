@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1600807752 source:c:\users\dan\documents\codeblocks\skyscraper\hw05sum\fileint.c
+	<stdio.h>
+	<stdbool.h>
+
+1600531366 source:c:\users\dan\documents\codeblocks\skyscraper\hw05sum\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"hw05.h"
+
+1600531366 c:\users\dan\documents\codeblocks\skyscraper\hw05sum\hw05.h
+	<stdio.h>
+	<stdbool.h>
+
