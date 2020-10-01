@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1600812897 source:c:\users\dan\documents\codeblocks\skyscraper\hw07qsort\hw07.c
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+
+1600812665 source:c:\users\dan\documents\codeblocks\skyscraper\hw07qsort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"hw07.h"
+
+1600531366 c:\users\dan\documents\codeblocks\skyscraper\hw07qsort\hw07.h
+	<stdio.h>
+	<stdbool.h>
+

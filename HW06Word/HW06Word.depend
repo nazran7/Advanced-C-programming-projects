@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1600531366 source:c:\users\dan\documents\codeblocks\skyscraper\hw06word\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"hw06.h"
+
+1600531366 c:\users\dan\documents\codeblocks\skyscraper\hw06word\hw06.h
+	<stdio.h>
+
+1600811021 source:c:\users\dan\documents\codeblocks\skyscraper\hw06word\filestr.c
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+

@@ -1,0 +1,110 @@
+==1788== Memcheck, a memory error detector
+==1788== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1788== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==1788== Command: ./hw08 inputs/test3.bin output3.bin
+==1788== Parent PID: 1787
+==1788== 
+--1788-- 
+--1788-- Valgrind options:
+--1788--    --tool=memcheck
+--1788--    --log-file=memcheck.txt
+--1788--    --leak-check=full
+--1788--    --verbose
+--1788-- Contents of /proc/version:
+--1788--   Linux version 4.15.0-66-generic (buildd@lgw01-amd64-044) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #75-Ubuntu SMP Tue Oct 1 05:24:09 UTC 2019
+--1788-- 
+--1788-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx-avx2-bmi
+--1788-- Page sizes: currently 4096, max supported 4096
+--1788-- Valgrind library directory: /usr/lib/valgrind
+--1788-- Reading syms from /mnt/AA96283696280603/Users/Dan/Documents/CodeBlocks/Skyscraper/HW08Struct/hw08
+--1788-- Reading syms from /lib/x86_64-linux-gnu/ld-2.27.so
+--1788--   Considering /lib/x86_64-linux-gnu/ld-2.27.so ..
+--1788--   .. CRC mismatch (computed 1b7c895e wanted 2943108a)
+--1788--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.27.so ..
+--1788--   .. CRC is valid
+--1788-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--1788--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--1788--   .. CRC mismatch (computed 41ddb025 wanted 9972f546)
+--1788--    object doesn't have a symbol table
+--1788--    object doesn't have a dynamic symbol table
+--1788-- Scheduler: using generic scheduler lock implementation.
+--1788-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==1788== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-1788-by-dan-on-???
+==1788== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-1788-by-dan-on-???
+==1788== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-1788-by-dan-on-???
+==1788== 
+==1788== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==1788== don't want to do, unless you know exactly what you're doing,
+==1788== or are doing some strange experiment):
+==1788==   /usr/lib/valgrind/../../bin/vgdb --pid=1788 ...command...
+==1788== 
+==1788== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==1788==   /path/to/gdb ./hw08
+==1788== and then give GDB the following command
+==1788==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=1788
+==1788== --pid is optional if only one valgrind process is running
+==1788== 
+--1788-- REDIR: 0x401f2f0 (ld-linux-x86-64.so.2:strlen) redirected to 0x580608c1 (???)
+--1788-- REDIR: 0x401f0d0 (ld-linux-x86-64.so.2:index) redirected to 0x580608db (???)
+--1788-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--1788--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--1788--   .. CRC mismatch (computed 50df1b30 wanted 4800a4cf)
+--1788--    object doesn't have a symbol table
+--1788-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--1788--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--1788--   .. CRC mismatch (computed f893b962 wanted 95ee359e)
+--1788--    object doesn't have a symbol table
+==1788== WARNING: new redirection conflicts with existing -- ignoring it
+--1788--     old: 0x0401f2f0 (strlen              ) R-> (0000.0) 0x580608c1 ???
+--1788--     new: 0x0401f2f0 (strlen              ) R-> (2007.0) 0x04c32db0 strlen
+--1788-- REDIR: 0x401d360 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c33ee0 (strcmp)
+--1788-- REDIR: 0x401f830 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c374f0 (mempcpy)
+--1788-- Reading syms from /lib/x86_64-linux-gnu/libc-2.27.so
+--1788--   Considering /lib/x86_64-linux-gnu/libc-2.27.so ..
+--1788--   .. CRC mismatch (computed b1c74187 wanted 042cc048)
+--1788--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.27.so ..
+--1788--   .. CRC is valid
+--1788-- REDIR: 0x4edac70 (libc.so.6:memmove) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed9d40 (libc.so.6:strncpy) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edaf50 (libc.so.6:strcasecmp) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed9790 (libc.so.6:strcat) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed9d70 (libc.so.6:rindex) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edc7c0 (libc.so.6:rawmemchr) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edade0 (libc.so.6:mempcpy) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edac10 (libc.so.6:bcmp) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed9d00 (libc.so.6:strncmp) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed9800 (libc.so.6:strcmp) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edad40 (libc.so.6:memset) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ef80f0 (libc.so.6:wcschr) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed9ca0 (libc.so.6:strnlen) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed9870 (libc.so.6:strcspn) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edafa0 (libc.so.6:strncasecmp) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed9840 (libc.so.6:strcpy) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edb0e0 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed9da0 (libc.so.6:strpbrk) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed97c0 (libc.so.6:index) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ed9c70 (libc.so.6:strlen) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ee46c0 (libc.so.6:memrchr) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edaff0 (libc.so.6:strcasecmp_l) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edabe0 (libc.so.6:memchr) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4ef8eb0 (libc.so.6:wcslen) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4eda050 (libc.so.6:strspn) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edaf20 (libc.so.6:stpncpy) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edaef0 (libc.so.6:stpcpy) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edc7f0 (libc.so.6:strchrnul) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4edb040 (libc.so.6:strncasecmp_l) redirected to 0x4a2a6e0 (_vgnU_ifunc_wrapper)
+--1788-- REDIR: 0x4fca3c0 (libc.so.6:__strrchr_avx2) redirected to 0x4c32730 (rindex)
+--1788-- REDIR: 0x4ed3070 (libc.so.6:malloc) redirected to 0x4c2faa0 (malloc)
+--1788-- REDIR: 0x4eda590 (libc.so.6:__GI_strstr) redirected to 0x4c37760 (__strstr_sse2)
+--1788-- REDIR: 0x4ed3950 (libc.so.6:free) redirected to 0x4c30cd0 (free)
+--1788-- REDIR: 0x4fcaad0 (libc.so.6:__memcpy_avx_unaligned_erms) redirected to 0x4c366e0 (memmove)
+--1788-- REDIR: 0x4fcaab0 (libc.so.6:__mempcpy_avx_unaligned_erms) redirected to 0x4c37130 (mempcpy)
+==1788== 
+==1788== HEAP SUMMARY:
+==1788==     in use at exit: 0 bytes in 0 blocks
+==1788==   total heap usage: 8 allocs, 8 frees, 16,344 bytes allocated
+==1788== 
+==1788== All heap blocks were freed -- no leaks are possible
+==1788== 
+==1788== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1788== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

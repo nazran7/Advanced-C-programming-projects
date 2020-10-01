@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1600814752 source:c:\users\dan\documents\codeblocks\skyscraper\hw08struct\hw08.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"hw08.h"
+
+1600531366 c:\users\dan\documents\codeblocks\skyscraper\hw08struct\hw08.h
+	<stdio.h>
+	<stdbool.h>
+
+1600815039 source:c:\users\dan\documents\codeblocks\skyscraper\hw08struct\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"hw08.h"
+
